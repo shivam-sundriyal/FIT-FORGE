@@ -241,8 +241,8 @@ img {
 }
 
 .nav .nav__button {
-    background-color: var(--title-color);
-    border: none;
+  background-color: var(--title-color);
+  border: none;
 }
 
 /* Show Menu */
@@ -252,8 +252,8 @@ img {
 
 /* Change background header */
 .bg-header {
-    background-color: var(--body-color);
-    box-shadow: 0 4px 8px hsla(180, 12%, 4%, 0.3);
+  background-color: var(--body-color);
+  box-shadow: 0 4px 8px hsla(180, 12%, 4%, 0.3);
 }
 
 /*=============== HOME ===============*/
@@ -340,19 +340,110 @@ img {
 }
 
 .button i {
-    font-size: 1.25rem;
-    transition: transform 0.3s;
+  font-size: 1.25rem;
+  transition: transform 0.3s;
 }
 
 .button__flex {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
 }
 
-.button__flex:hover i{
+.button__flex:hover i {
+  transform: translateX(0.25rem);
+}
+
+/*=============== PROGRAM ===============*/
+.program__container {
+  grid-template-columns: 225px;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.program__card {
+  display: grid;
+  background-color: hsla(79, 6%, 64%, 0.07);
+  padding: 1.5rem 2rem;
+  border: 2px solid transparent;
+  transition: background 0.5s, border 0.4s;
+}
+
+.program__img {
+  width: 38px;
+}
+
+.program__shape {
+  width: 50px;
+  height: 50px;
+  background-color: var(--first-color-gray);
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  transition: background 0.5s;
+}
+
+.program__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.program__description {
+  font-size: var(--small-font-size);
+  letter-spacing: 0.5px;
+  line-height: 150%;
+}
+
+.program__title,
+.program__description {
+  transition: color 0.5s;
+}
+
+.program__button {
+  justify-self: flex-end;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--title-color-black);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.program__button i {
+    display: block;
+    transition: transform 0.3s;
+}
+
+.program__button:hover i {
     transform: translateX(0.25rem);
 }
 
-/*=============== BUTTON ===============*/
+.program__card:hover {
+    background-color: var(--first-color);
+    border: 2px solid var(--first-color-light);
+    /* cursor: pointer; */
+}
+
+.program__card:hover .program__shape {
+    background-color: var(--first-color-light);
+}
+
+.program__card:hover .program__title,
+.program__card:hover .program__description {
+    color: var(--title-color-black);
+}
+
+.program__card:hover .program__button {
+    opacity: 1;
+}
+
+/*=============== CHOOSE ===============*/
+
+/*=============== PRICING ===============*/
+
+/*=============== CALCULATE ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL BAR ===============*/
